@@ -11,7 +11,7 @@ describe('AppComponent', () => {
   const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
-    { path: '', redirectTo: '/home', pathMatch: 'full'}
+    { path: '', redirectTo: '/home', pathMatch: 'full' }
   ];
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -21,12 +21,8 @@ describe('AppComponent', () => {
         AboutComponent,
         QuoteTextComponent
       ],
-      imports: [
-        RouterModule.forRoot(routes)
-      ],
-      providers: [
-        { provide: APP_BASE_HREF, useValue: '/' }
-      ]
+      imports: [RouterModule.forRoot(routes)],
+      providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
     }).compileComponents();
   }));
 
@@ -46,6 +42,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Angular Unit Testing!');
+    expect(compiled.querySelector('h1').textContent).toContain(
+      'Welcome to Angular Unit Testing!'
+    );
   }));
 });
