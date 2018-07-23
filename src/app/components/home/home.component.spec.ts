@@ -6,10 +6,7 @@ import { HomeComponent } from './home.component';
 describe('HomeComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        HomeComponent,
-        QuoteTextComponent
-      ],
+      declarations: [HomeComponent, QuoteTextComponent]
     }).compileComponents();
   }));
 

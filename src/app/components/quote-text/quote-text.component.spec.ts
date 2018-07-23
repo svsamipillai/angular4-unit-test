@@ -5,9 +5,7 @@ import { QuoteTextComponent } from './quote-text.component';
 describe('HomeComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        QuoteTextComponent
-      ],
+      declarations: [QuoteTextComponent]
     }).compileComponents();
   }));
 
@@ -16,6 +14,8 @@ describe('HomeComponent', () => {
     const app = fixture.debugElement.componentInstance;
     app.text = 'test quote';
     fixture.detectChanges();
-    expect(fixture.nativeElement.querySelector('q').innerText).toEqual('test quote');
+    expect(fixture.nativeElement.querySelector('q').innerText).toEqual(
+      'test quote'
+    );
   }));
 });
