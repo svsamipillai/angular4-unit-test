@@ -1,12 +1,22 @@
-<div style="text-align:center">
-  <h1>
+<div class="grid">
+  <h2 class="ui header">
     Welcome to {{title}}!
-  </h1>
+  </h2>
 </div>
 <nav>
-  <a routerLink="/home" routerLinkActive="active">Home</a>
-  <a routerLink="/users" routerLinkActive="active">Users</a>
-  <a routerLink="/about" routerLinkActive="active">About</a>
-  <a routerLink="/contact" routerLinkActive="active">Contact</a>
+  <div class="ui menu">
+    <div class="header item">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+    </div>
+    <div class="item">
+      <a routerLink="/users" routerLinkActive="active">Users</a>
+    </div>
+    <div class="item">
+      <a routerLink="/about" routerLinkActive="active">About</a>
+    </div>
+    <div class="item">
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </div>
+  </div>
 </nav>
 <router-outlet></router-outlet>

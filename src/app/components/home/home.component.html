@@ -1,4 +1,14 @@
-<div>
-      {{ text }}
+<div class="container">
+      <h1>Angular Semantic UI</h1>
+      <div class="ui grid">
+            <div class="four wide column">
+            </div>
+            <div class="four wide column"></div>
+            <div class="four wide column"></div>
+            <div class="four wide column"></div>
+            <div>
+                  {{ text }}
+            </div>
+            <app-quote-text [text]="quoteText"></app-quote-text>
+      </div>
 </div>
-<app-quote-text [text]="quoteText"></app-quote-text>

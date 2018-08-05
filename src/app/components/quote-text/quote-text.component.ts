@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-quote-text',
@@ -6,5 +6,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./quote-text.component.sass']
 })
 export class QuoteTextComponent {
+  count: number;
   @Input() text: string;
+  @Output() change: EventEmitter<number> = new EventEmitter<number>();
+
+  click() {
+    this.count++;
+    this.change.emit(this.count);
+  }
 }

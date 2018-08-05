@@ -7,8 +7,8 @@ export class UserServiceMock {
   getUsers(): Array<{}> {
     return [
       {
-        name: 'user1',
-        surname: 'usersurname1'
+        name: 'Name',
+        surname: 'Surname'
       }
     ];
   }
